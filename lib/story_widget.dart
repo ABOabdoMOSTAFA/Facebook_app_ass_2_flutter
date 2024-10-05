@@ -1,3 +1,4 @@
+import 'package:assignment_2_flutter/constants/app_images.dart';
 import 'package:flutter/material.dart';
 
 class StoryWidget extends StatelessWidget {
@@ -9,8 +10,7 @@ class StoryWidget extends StatelessWidget {
       height: 150,
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage("assets/images/facebookStory.jpg"),
-              fit: BoxFit.cover),
+              image: AssetImage(AppImages.facebookStory), fit: BoxFit.cover),
           borderRadius: BorderRadius.circular(20)),
       child: Stack(
         children: [

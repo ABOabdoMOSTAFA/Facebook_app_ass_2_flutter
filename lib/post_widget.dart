@@ -1,3 +1,4 @@
+import 'package:assignment_2_flutter/constants/app_images.dart';
 import 'package:assignment_2_flutter/like_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -130,17 +131,17 @@ class PostWidget extends StatelessWidget {
         Row(
           children: [
             LikeWidget(
-                icons: Icons.thumb_up_alt_outlined,
+                imagePath: AppImages.singleLike,
                 colorIcon: Colors.black,
                 titleIcon: "Like"),
             Spacer(),
             LikeWidget(
-                icons: Icons.chat_bubble_outline,
+                imagePath: AppImages.comment,
                 colorIcon: Colors.black,
                 titleIcon: "Comment"),
             Spacer(),
             LikeWidget(
-                icons: Icons.reply_all,
+                imagePath: AppImages.share,
                 colorIcon: Colors.black,
                 titleIcon: "share"),
           ],
