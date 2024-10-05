@@ -1,12 +1,11 @@
-import 'package:assignment_2_flutter/constants/app_images.dart';
+import 'package:assignment_2_flutter/constants/constants.dart';
 import 'package:assignment_2_flutter/like_widget.dart';
 import 'package:flutter/material.dart';
 
 class PostWidget extends StatelessWidget {
-  String personTitle;
-  String postTitle;
+  PostData postData;
 
-  PostWidget({required this.postTitle, required this.personTitle});
+  PostWidget({required this.postData});
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +34,7 @@ class PostWidget extends StatelessWidget {
                 child: Column(
                   children: [
                     Text(
-                      personTitle,
+                      postData.personTitle,
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: 18,
@@ -68,7 +67,7 @@ class PostWidget extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(left: 20),
           child: Text(
-            postTitle,
+            postData.postTitle,
             style: TextStyle(
                 color: Colors.black, fontSize: 22, fontWeight: FontWeight.w400),
           ),
@@ -153,4 +152,11 @@ class PostWidget extends StatelessWidget {
       ],
     );
   }
+}
+
+class PostData {
+  String personTitle;
+  String postTitle;
+
+  PostData({required this.personTitle, required this.postTitle});
 }

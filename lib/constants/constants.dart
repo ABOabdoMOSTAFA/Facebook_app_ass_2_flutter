@@ -8,3 +8,7 @@ class AppImages {
   static const String share = "assets/images/share.png";
   static const String singleLike = "assets/images/singleLike.jpg";
 }
+
+class StringsTitle {
+  static const String appbarTitle = "Home";
+}
